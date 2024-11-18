@@ -1,0 +1,18 @@
+$ git checkout -b gh-pages
+Switched to a new branch 'gh-pages'
+$ git remote add origin git@github.com:amingilani/price-check.git
+$ git push -u origin gh-pages
+Counting objects: 27, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (25/25), done.
+Writing objects: 100% (27/27), 28.67 KiB | 0 bytes/s, done.
+Total 27 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), done.
+To github.com:amingilani/price-check.git
+ * [new branch]      gh-pages -> gh-pages
+$ echo 'pricecheck.gilani.me' > CNAME
+$ git add .
+$ git commit -m 'Add a custom domain'
+...
+$ git push
+...
